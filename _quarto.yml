@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "learningDiary"
+  author: "Xiaoyi Chens"
+  date: "2024/1/18"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - wk2_xaringen.qmd
+    - wk3_RS_data.qmd
+    - wk4_policy.qmd
+    - wk5_GEE.qmd
+    - wk6_classification1.qmd
+    - wk7_classification2.qmd
+    - wk8_SAR_data.qmd
+
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    darkmode: true
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

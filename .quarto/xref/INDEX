@@ -1,0 +1,47 @@
+{
+  "index.qmd": {
+    "index.html": "56d13b44"
+  },
+  "intro.qmd": {
+    "intro.html": "18fe4652"
+  },
+  "summary.qmd": {
+    "summary.html": "298a031a"
+  },
+  "references.qmd": {
+    "references.html": "ba9dfadc"
+  },
+  "wk2_intro_RS.qmd": {
+    "wk2_intro_RS.html": "07f731ff"
+  },
+  "wk2_xaringen.qmd": {
+    "wk2_xaringen.html": "ecc3008d"
+  },
+  "wk2_Portfolio.Rmd": {
+    "wk2_Portfolio.html": "7998651d"
+  },
+  "wk5_GEE.qmd": {
+    "wk5_GEE.html": "85dd4be5"
+  },
+  "wk9_SAR_data.qmd": {
+    "wk9_SAR_data.html": "1f455826"
+  },
+  "wk7_classification1.qmd": {
+    "wk7_classification1.html": "61230e4d"
+  },
+  "wk3_RS_data.qmd": {
+    "wk3_RS_data.html": "8baff88c"
+  },
+  "wk4_policy.qmd": {
+    "wk4_policy.html": "21b32147"
+  },
+  "wk6_classification1.qmd": {
+    "wk6_classification1.html": "02bbd7d3"
+  },
+  "wk7_classification2.qmd": {
+    "wk7_classification2.html": "a49276db"
+  },
+  "wk8_SAR_data.qmd": {
+    "wk8_SAR_data.html": "74d54e58"
+  }
+}
