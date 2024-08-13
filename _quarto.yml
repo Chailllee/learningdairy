@@ -5,7 +5,7 @@ project:
 book:
   title: "learningDiary"
   author: "Xiaoyi Chens"
-  date: "2024/1/18"
+  date: "2024/8/18"
   chapters:
     - index.qmd
     - intro.qmd
