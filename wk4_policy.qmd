@@ -4,19 +4,18 @@ title: "Week4 - Policy Applications"
 
 ## Problem: Context & Background
 
-Beijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization.
+Beijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization.(Beijing Municipal Emergency Committee, 2022)[^wk4_policy-2]
 
 ## Policy & Case Study
 
 ### UN Sustainable Development Goals
 
-In response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs)[^wk4_policy-1]. Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.
+In response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs)[^wk4_policy-2]. Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.
 
-[^wk4_policy-1]:United Nations Department of Economic and Social Affairs (UNDESA). (n.d.)*Milestones for Inclusive Social Development*. Retrieved from [https://social.desa.un.org/sdn/transforming-our-world-the-2030-agenda-for-sustainable-development].
 
 ### Beijing Urban Resilience Strategy
 
-Beijing’s urban resilience strategy aims to address vulnerabilities exacerbated by urbanization. Key components include:
+Beijing’s urban resilience strategy aims to address vulnerabilities exacerbated by urbanization(Yuan,H., 2023)[^wk4_policy-3]. Key components include:
 
 -   **Upgrading Emergency Disaster Prevention Technology**: Investing in advanced monitoring systems, early warning mechanisms, and real-time data analytics can significantly enhance disaster preparedness and response.
 
@@ -28,7 +27,7 @@ By implementing these strategies, Beijing can better withstand future climate-re
 
 ![Connect artificial or natural ponds and lakes with nearby rivers and create above-ground and groundwater systems for drainage and collecting excess water](images/clipboard-211754604.png){fig-align="center"}
 
-## Beijing Sponge City Strategy
+### Beijing Sponge City Strategy
 
 ![](images/clipboard-959501741.png)
 
@@ -42,6 +41,8 @@ This standard aims to scientifically and rationally compile sponge city planning
 
 -   **Content Summary**: Outlines requirements for compiling sponge city plans within Beijing’s administrative region, covering general urban planning, district planning, detailed planning, and town planning. Also includes assessment of sponge city planning implementation.
 
+## Relationship between Urban Resilience Strategy & "Sponge City"
+
 ## Reflection
 
 In this course, I gained valuable insights from examining a city’s policies related to natural disaster protection. Among the new concepts I encountered, the most memorable one was the idea of a “**sponge city**.” This term vividly illustrates Beijing’s approach to mitigating flood hazards by implementing innovative measures.
@@ -54,8 +55,11 @@ Overall, this course highlighted the complexities of urban resilience and the im
 
 ## Reference
 
-Beijing Municipal Emergency Committee.(2022).Notice of the Beijing Municipal Emergency Committee on Printing and Distributing the Beijing Flood Control Emergency Plan (Revised in 2022).https://www.beijing.gov.cn/zhengce/zhengcefagui/202308/t20230807_3216832.html
+[^wk4_policy-1]:Beijing Municipal Emergency Committee.(2022).Notice of the Beijing Municipal Emergency Committee on Printing and Distributing the Beijing Flood Control Emergency Plan (Revised in 2022).https://www.beijing.gov.cn/zhengce/zhengcefagui/202308/t20230807_3216832.html
+
+[^wk4_policy-2]:United Nations Department of Economic and Social Affairs (UNDESA). (n.d.)_Milestones for Inclusive Social Development_. Retrieved from [https://social.desa.un.org/sdn/transforming-our-world-the-2030-agenda-for-sustainable-development].
+
 
 Ding, X., Liao, W., Lei, X., Wang, H., Yang, J., & Wang, H. (2022). Assessment of the impact of climate change on urban flooding: A case study of Beijing, China. Journal of Water and Climate Change, 13(10), 2692–3715. https://doi.org/10.2166/wcc.2022.224
 
-Proposals for China's Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024).
+[^wk4_policy-3]:Yuan, H.Proposals for China's Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024).
