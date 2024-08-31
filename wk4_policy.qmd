@@ -10,7 +10,9 @@ Beijing recently faced an unprecedented natural event: the heaviest rainfall in 
 
 ### UN Sustainable Development Goals
 
-In response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs). Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.
+In response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs)[^wk4_policy-1]. Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.
+
+[^wk4_policy-1]:United Nations Department of Economic and Social Affairs (UNDESA). (n.d.)*Milestones for Inclusive Social Development*. Retrieved from [https://social.desa.un.org/sdn/transforming-our-world-the-2030-agenda-for-sustainable-development].
 
 ### Beijing Urban Resilience Strategy
 

@@ -76,12 +76,11 @@ Kim, S.W et al.(2021)[^wk3_rs_data-3], discusses various indices used to estimat
 
 [^wk3_rs_data-3]: Kim, S.W. and Brown, R., 2021. "Urban Heat Island (UHI) intensity and magnitude estimation: A systematic literature review." *Science of The Total Environment*, 779, p.146389. DOI:10.1016/j.scitotenv.2021.146389
 
+Schultz, M. et al.(2016)[^wk3_rs_data-4] evaluates the performance of eight vegetation indices (VI) from Landsat time series (LTS) for monitoring deforestation across tropical regions. It uses a robust reference database to assess spatial accuracy, sensitivity to observation frequency, and the performance of combined VI. The study mentions the use of the Normalized Difference Fraction Index (NDFI) sensitive to canopy cover, moisture-related VIs (Normalized Difference Moisture Index (NDMI) and Tasseled Cap Wetness (TCw)) that performed spatially better than greenness-related VIs (Normalized Difference Vegetation Index (NDVI) and Tasseled Cap Greenness (TCg)). The spatial accuracy improved, and the overestimation of changes decreased when VIs were fused at the feature level.
 
-Schultz, M. et al.(2016)[^wk3_rs_data-4] evaluates the performance of eight vegetation indices (VI) from Landsat time series (LTS) for monitoring deforestation across tropical regions. It uses a robust reference database to assess spatial accuracy, sensitivity to observation frequency, and the performance of combined VI. The study mentions the use of the Normalized Difference Fraction Index (NDFI) sensitive to canopy cover, moisture-related VIs (Normalized Difference Moisture Index (NDMI) and Tasseled Cap Wetness (TCw)) that performed spatially better than greenness-related VIs (Normalized Difference Vegetation Index (NDVI) and Tasseled Cap Greenness (TCg)). The spatial accuracy improved, and the overestimation of changes decreased when VIs were fused at the feature level. 
+[^wk3_rs_data-4]: Schultz, M., Verbesselt, J.G.P.W., Carter, S., Verbesselt, J., Avitabile, V., Quang, H.V., & Herold, M. (2016). ‘Performance of Landsat time series vegetation indices for monitoring deforestation’, *International Journal of Applied Earth Observation and Geoinformation*, vol. 52, pp. 318-327.
 
-[^wk3_rs_data-4]: Schultz, M., Verbesselt, J.G.P.W., Carter, S., Verbesselt, J., Avitabile, V., Quang, H.V., & Herold, M. (2016). ‘Performance of Landsat time series vegetation indices for monitoring deforestation’, _International Journal of Applied Earth Observation and Geoinformation_, vol. 52, pp. 318-327. 
-
-![UHI Analysis Image](https://ars.els-cdn.com/content/image/1-s2.0-S0303243416301040-gr2_lrg.jpg){alt="UHI Analysis Image"} 
+![UHI Analysis Image](https://ars.els-cdn.com/content/image/1-s2.0-S0303243416301040-gr2_lrg.jpg)
 
 These examples illustrate how combining multiple indices can enhance the analysis and provide more accurate and detailed information for various remote sensing applications.
 
@@ -94,3 +93,5 @@ So this is an example of the band processing I did in my undergraduate program t
 ![Comparison before and after band optimization](images/clipboard-4252325944.png){fig-alt="Comparison before and after band optimization" fig-align="center"}
 
 This realization underscores the significance of hands-on practice and theoretical knowledge integration in effectively utilizing remote sensing techniques for various environmental analyses and research endeavors.
+
+# Reference
