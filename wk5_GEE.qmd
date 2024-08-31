@@ -6,11 +6,15 @@ title: "Week5 - Google Earth Engine"
 
 The theoretical part of the course mainly introduced the basic concepts, data structures, operations, and application cases of Google Earth Engine (GEE).
 
+::: callout-tip
+
 Characteristics of GEE: GEE is a geospatial processing service that utilizes cloud servers to store and analyze massive amounts of remote sensing imagery and geographic data, enabling rapid and large-scale monitoring and simulation of changes on the Earth's surface.
 
 Data structure of GEE: Data in GEE is divided into two types: Images and Features, corresponding to raster and vector data, respectively. Images and Features can form Collections, representing stacks of multiple images or features. Data in GEE exists in the form of objects, each with its own properties and methods.
 
 Operations in GEE: GEE uses the JavaScript language for coding, which can be run in the browser. The code in GEE is divided into client-side and server-side, with the client-side code mainly used for interface control and interaction, and the server-side code mainly used for data processing and analysis. Data processing in GEE mainly relies on reducers, which can perform various statistical, analytical, and transformation operations on images or features. GEE also provides some advanced features such as regression, joining, and machine learning.
+
+:::
 
 ## Application
 
