@@ -6,13 +6,13 @@ title: "Week4 - Policy Applications"
 
 Beijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization.
 
-## 2. Policy & Case Study
+## Policy & Case Study
 
-### 2.1 UN Sustainable Development Goals
+### UN Sustainable Development Goals
 
 In response to such climate-related challenges, it is crucial to align efforts with the United Nations’ Sustainable Development Goals (SDGs). Key objectives include prioritizing wastewater treatment and sustainable urbanization. By integrating these goals into urban planning and development, cities like Beijing can enhance their resilience to climate disasters. Additionally, following the Sendai Framework for Disaster Risk Reduction provides a comprehensive approach to disaster preparedness and mitigation.
 
-### 2.2 Beijing Urban Resilience Strategy
+### Beijing Urban Resilience Strategy
 
 Beijing’s urban resilience strategy aims to address vulnerabilities exacerbated by urbanization. Key components include:
 
