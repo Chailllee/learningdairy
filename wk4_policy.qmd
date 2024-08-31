@@ -4,7 +4,8 @@ title: "Week4 - Policy Applications"
 
 ## Problem: Context & Background
 
-Beijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization.(Beijing Municipal Emergency Committee, 2022)[^wk4_policy-2]
+Beijing recently faced an unprecedented natural event: the heaviest rainfall in 140 years occurred between July 29 and August 1, 2023. This extreme weather event led to widespread flooding, impacting the city’s infrastructure, residents, and environment. Several factors contributed to the severity of the floods, including climate conditions, landform characteristics, and the effects of rapid urbanization.(Beijing Municipal Emergency Committee, 2022)[^wk4_policy-1]
+
 
 ## Policy & Case Study
 
@@ -16,6 +17,8 @@ In response to such climate-related challenges, it is crucial to align efforts w
 ### Beijing Urban Resilience Strategy
 
 Beijing’s urban resilience strategy aims to address vulnerabilities exacerbated by urbanization(Yuan,H., 2023)[^wk4_policy-3]. Key components include:
+
+
 
 -   **Upgrading Emergency Disaster Prevention Technology**: Investing in advanced monitoring systems, early warning mechanisms, and real-time data analytics can significantly enhance disaster preparedness and response.
 
@@ -29,21 +32,28 @@ By implementing these strategies, Beijing can better withstand future climate-re
 
 ### Beijing Sponge City Strategy
 
-![](images/clipboard-959501741.png)
+“Sponge City” refers to an urban design approach that uses green infrastructure to absorb, store, and purify rainwater, thereby reducing flood risks and improving urban environmental quality(Xu, Y. , 2020)[^wk4_policy-4]. This design includes elements such as parks, permeable pavements, rain gardens, infiltration and storage wells, urban gardens, and green walls.
 
-This standard aims to scientifically and rationally compile sponge city planning, ensuring effective roles in water safety, resources, environment, ecology, and culture.
 
--   **Issuing Bodies**: Compiled by the Beijing Urban Planning and Design Research Institute and the China Urban Planning and Design Research Institute.
 
--   **Approval Departments**: Approved by the Beijing Municipal Planning and Natural Resources Committee and the Beijing Municipal Market Supervision Administration.
+![Xiong'an New District, Zangang Cluster & Xiongdong District masterplan \| Central park](images/clipboard-959501741.png) This standard aims to scientifically and rationally compile sponge city planning, ensuring effective roles in water safety, resources, environment, ecology, and culture.
 
--   **Implementation Date**: Came into effect on January 1, 2021.
+Outlines requirements for compiling sponge city plans within Beijing’s administrative region, covering general urban planning, district planning, detailed planning, and town planning. Also includes assessment of sponge city planning implementation. These features not only facilitate the natural flow and storage of rainwater but also enhance the urban microclimate, increase biodiversity, and provide more recreational spaces for residents.
 
--   **Content Summary**: Outlines requirements for compiling sponge city plans within Beijing’s administrative region, covering general urban planning, district planning, detailed planning, and town planning. Also includes assessment of sponge city planning implementation.
+## Urban Resilience Strategy v.s. "Sponge City"
 
-## Relationship between Urban Resilience Strategy & "Sponge City"
+**Relationship Between Sponge City and Urban Resilience:**
 
-## Reflection
+The "Sponge City" concept is a nature-based approach designed to enhance urban resilience by improving water management and reducing the impact of extreme weather events. In essence, a "Sponge City" mimics natural hydrological processes by absorbing, storing, and purifying rainwater, thereby reducing urban flooding risks and replenishing groundwater. This strategy helps cities to adapt to climate change by making them more capable of withstanding and recovering from environmental stresses, particularly those related to water.
+
+**Supporting SDGs:**
+
+1. **SDG 11 - Sustainable Cities and Communities:** The "Sponge City" strategy directly supports SDG 11(United Nations, 2015)[^wk4_policy-5] by promoting resilient infrastructure and sustainable urban development. It contributes to making cities inclusive, safe, resilient, and sustainable by reducing the vulnerability of urban areas to flooding, enhancing public spaces, and improving the quality of urban life.
+
+2. **SDG 6 - Clean Water and Sanitation:** The "Sponge City" approach also aligns with SDG 6(United Nations, 2015)[^wk4_policy-6], which aims to ensure availability and sustainable management of water and sanitation for all. By improving urban water management, the "Sponge City" concept helps in the efficient use of water resources, reducing the risk of water scarcity, and ensuring cleaner water supply by filtering pollutants naturally.
+
+
+### Reflection
 
 In this course, I gained valuable insights from examining a city’s policies related to natural disaster protection. Among the new concepts I encountered, the most memorable one was the idea of a “**sponge city**.” This term vividly illustrates Beijing’s approach to mitigating flood hazards by implementing innovative measures.
 
@@ -55,11 +65,18 @@ Overall, this course highlighted the complexities of urban resilience and the im
 
 ## Reference
 
-[^wk4_policy-1]:Beijing Municipal Emergency Committee.(2022).Notice of the Beijing Municipal Emergency Committee on Printing and Distributing the Beijing Flood Control Emergency Plan (Revised in 2022).https://www.beijing.gov.cn/zhengce/zhengcefagui/202308/t20230807_3216832.html
 
-[^wk4_policy-2]:United Nations Department of Economic and Social Affairs (UNDESA). (n.d.)_Milestones for Inclusive Social Development_. Retrieved from [https://social.desa.un.org/sdn/transforming-our-world-the-2030-agenda-for-sustainable-development].
+[^wk4_policy-1]: United Nations Department of Economic and Social Affairs (UNDESA). (n.d.)*Milestones for Inclusive Social Development*. Retrieved from \[https://social.desa.un.org/sdn/transforming-our-world-the-2030-agenda-for-sustainable-development\].
 
 
-Ding, X., Liao, W., Lei, X., Wang, H., Yang, J., & Wang, H. (2022). Assessment of the impact of climate change on urban flooding: A case study of Beijing, China. Journal of Water and Climate Change, 13(10), 2692–3715. https://doi.org/10.2166/wcc.2022.224
+[^wk4_policy-2]: United Nations Department of Economic and Social Affairs (UNDESA). (n.d.)*Milestones for Inclusive Social Development*. Retrieved from \[https://social.desa.un.org/sdn/transforming-our-world-the-2030-agenda-for-sustainable-development\].
 
-[^wk4_policy-3]:Yuan, H.Proposals for China's Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024).
+[^wk4_policy-3]: Yuan, H.Proposals for China's Vision for 2035 (2023) Available at: https://www.mem.gov.cn/xw/ztzl/2020/xxgcwzqh/qwjd/zjjd/202012/t20201208_374880.shtml (Accessed: 10 March 2024).
+
+[^wk4_policy-4]: Xu, Y. (2020). ‘Sponge Cities: A Sustainable Urban Design Approach’, Chapman Taylor. Available at: \[https://www.chapmantaylor.com/insights/what-are-sponge-cities-and-why-are-they-the-future-of-urban-design\] (Accessed: 31 August 2024).
+
+[^wk4_policy-5]:Sustainable Development Goals (SDG) 11.2015. _United Nations_[SDG 11 - Sustainable Cities and Communities](https://sdgs.un.org/goals/goal11)
+
+[^wk4_policy-6]:Sustainable Development Goals (SDG) 6.2015. _United Nations_[SDG 6 - Clean Water and Sanitation](https://sdgs.un.org/goals/goal6)
+
+
