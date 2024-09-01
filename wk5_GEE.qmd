@@ -2,7 +2,7 @@
 title: "Week5 - Google Earth Engine"
 ---
 
-## **Summary**
+## **Summary of class5**
 
 The theoretical part of the course mainly introduced the basic concepts, data structures, operations, and application cases of Google Earth Engine (GEE).
 
@@ -18,7 +18,11 @@ Operations in GEE: GEE uses the JavaScript language for coding, which can be run
 
 ## Application
 
-Here’s a summary of the Google Earth Engine (GEE) applications:
+### Example
+
+Google Earth Engine (GEE) is a powerful geospatial processing service that leverages cloud servers to store and analyze vast amounts of remote sensing imagery and geospatial data(Noel Gorelick et al., 2017)[^wk5_GEE-1]. Its main features include: _Rapid Processing_ ( Capable of quickly and massively monitoring and simulating changes on the Earth’s surface), _Diverse Data Types_ (Supports both raster and vector data, corresponding to images and features respectively), _Advanced Functions_ (Offers advanced data processing capabilities such as regression, joins, and machine learning).
+
+Here’s a summary of the Google Earth Engine (GEE) applications(Rafael Louzeiro, 2021)[^wk5_GEE-2]:
 
 -   **Remote Sensing**: GEE processes remote sensing data, useful for environmental and climate analysis.
 
@@ -28,9 +32,36 @@ Here’s a summary of the Google Earth Engine (GEE) applications:
 
 -   **Real-World Applications**: GEE is applied in various fields, including vegetation analysis, land cover studies, and natural disaster management.
 
-This picture provides an overview of how GEE can be utilized in environmental science, highlighting its capabilities and benefits.
+This picture provides an overview of how GEE can be utilized in environmental science, highlighting its capabilities and benefits.(Meisam Amani et al., 2020)[^wk5_GEE-3]
 
 ![GEE applications (Meisam Amani 2020)](images/clipboard-2121080514.png){fig-align="center" width="1000"}
+
+### Earth Engine Explorer (EE Explorer)
+
+EE Explorer is a lightweight geospatial image data viewer that provides access to a wide range of global and regional datasets from the Earth Engine Data Catalog. It allows users to quickly view, zoom, and pan data anywhere on Earth, adjust visualization settings, and layer data to inspect changes over time( Google Earth Engine, 2024)[^wk5_GEE-4].
+
+**Components**:
+
+- **Data Catalog**: This is where users discover and import datasets. It lists various data types and multi-day mosaics, with descriptions and direct links to datasets.
+
+- **Workspace**: This is where users manage and visualize datasets. It includes a map and a list of data layers. Users can add datasets, adjust visualization settings, and view multiple data layers simultaneously.
+
+- **Visualization Settings**: Users can adjust visualization parameters such as range, gamma, and opacity. Data can be viewed in single-band grayscale, single-band pseudo-color, and three-band RGB.
+
+- **Change Over Time**: Users can visualize changes over time by adding the same dataset as two separate layers and setting them to show different time slices.
+
+**Advanced Features**:
+
+- **Google Earth Engine**: For more advanced features like classifying land cover, downloading datasets, and building data analysis algorithms, users can sign up for Google Earth Engine.
+
+![Working place of GEE](images/GEEworkplace.jpeg){fig-align="center" width="1000"}
+
+**Getting Started with EE Explorer**:
+There are several tutorials available to help you get started. These tutorials cover everything from basic navigation to advanced data visualization techniques. You can explore these resources through the following link:
+
+- [Beginner's Cookbook with EE Explorer](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+
+By following these tutorials, users can become familiar with the interface, learn how to access and visualize various datasets, and understand how to utilize EE Explorer's features for their specific needs.
 
 ## In the practical exercises section, I learned
 
@@ -46,8 +77,11 @@ One aspect of **GEE** that stands out to me as particularly user-friendly, espec
 
 ## References
 
-• Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment.
+[^wk5_GEE-1]: Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment. DOI:https://doi.org/10.1016/j.rse.2017.06.031
 
-• Rafael Louzeiro – GIS/Environmental Specialist, Google Earth Engine – How it can be used in Environmental Science1, Jun 3, 2021, Integrate Sustainability Pty Ltd, <https://www.integratesustainability.com.au/2021/06/03/google-earth-engine-how-it-can-be-used-in-environmental-science/>
+[^wk5_GEE-2]: Rafael Louzeiro – GIS/Environmental Specialist, Google Earth Engine – How it can be used in Environmental Science1, Jun 3, 2021, Integrate Sustainability Pty Ltd, <https://www.integratesustainability.com.au/2021/06/03/google-earth-engine-how-it-can-be-used-in-environmental-science/>
 
-• Meisam Amani, Senior Member, IEEE, Arsalan Ghorbanian , Seyed Ali Ahmadi , Mohammad Kakooei , Armin Moghimi , S. Mohammad Mirmazloumi, Student Member, IEEE, Sayyed Hamed Alizadeh Moghaddam , Sahel Mahdavi, Masoud Ghahremanloo, Saeid Parsian, Qiusheng Wu. 2020. Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE JOURNAL OF SELECTED TOPICS IN APPLIED EARTH OBSERVATIONS AND REMOTE SENSING, VOL. 13,.
+[^wk5_GEE-3]: Meisam Amani, Senior Member, IEEE, Arsalan Ghorbanian , Seyed Ali Ahmadi , Mohammad Kakooei , Armin Moghimi , S. Mohammad Mirmazloumi, Student Member, IEEE, Sayyed Hamed Alizadeh Moghaddam , Sahel Mahdavi, Masoud Ghahremanloo, Saeid Parsian, Qiusheng Wu. 2020. Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE JOURNAL OF SELECTED TOPICS IN APPLIED EARTH OBSERVATIONS AND REMOTE SENSING, VOL. 13,.
+
+[^wk5_GEE-4]: Google Earth Engine (2024) 'Introduction to Google Earth Engine', Google Earth Engine. source: https://www.google.com/earth/outreach/learn/introduction-to-google-earth-engine (Assessed day: September 1st, 2024).
+
