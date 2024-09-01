@@ -2,6 +2,23 @@
 title: "Week6 - Classification-I"
 ---
 
+## Summary
+
+In this week, we explore the use of Google Earth Engine (GEE) for geospatial analysis. We start by loading administrative boundary data from the FAO GAUL global admin layers and proceed to work with Sentinel-2 surface reflectance data. The session covers cloud masking techniques, classification using supervised classifiers like Random Forest, and accuracy assessment. 
+
+::: callout-tip
+
+*GEE Data Catalog*: The page discusses how to search and load data from the Google Earth Engine (GEE) data catalog, specifically focusing on FAO GAUL global admin layers and Sentinel data.
+
+*Script and Code Examples*: It provides example code for loading and filtering data, applying cloud masks, and handling Sentinel data.
+
+*Classification Process*: The page explains the process of classification using supervised classifiers like CART, RandomForest, NaiveBayes, and SVM, including steps for training and validating the model.
+
+*Training Data*: Instructions are given on how to select and use training data within the study area, including generating samples and merging polygons into a feature collection.
+
+:::
+
+
 ## Overfitting
 
 $$Tree score = SSR + TreePenalty_{alpha}* T_{Mumber Of Leaves}$$
