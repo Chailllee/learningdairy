@@ -46,20 +46,23 @@ EE Explorer is a lightweight geospatial image data viewer that provides access t
 
 - **Workspace**: This is where users manage and visualize datasets. It includes a map and a list of data layers. Users can add datasets, adjust visualization settings, and view multiple data layers simultaneously.
 
+**Features**:
+
 - **Visualization Settings**: Users can adjust visualization parameters such as range, gamma, and opacity. Data can be viewed in single-band grayscale, single-band pseudo-color, and three-band RGB.
 
 - **Change Over Time**: Users can visualize changes over time by adding the same dataset as two separate layers and setting them to show different time slices.
 
-**Advanced Features**:
 
 - **Google Earth Engine**: For more advanced features like classifying land cover, downloading datasets, and building data analysis algorithms, users can sign up for Google Earth Engine.
 
 ![Working place of GEE](images/GEEworkplace.jpeg){fig-align="center" width="1000"}
 
 **Getting Started with EE Explorer**:
-There are several tutorials available to help you get started. These tutorials cover everything from basic navigation to advanced data visualization techniques. You can explore these resources through the following link:
+There are several tutorials available to help us get started. These tutorials cover everything from basic navigation to advanced data visualization techniques. We can explore these resources through the following link:
 
 - [Beginner's Cookbook with EE Explorer](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+
+![Get start with GEE](images/GEEcookbook.png){fig-align="center" width="1000"}
 
 By following these tutorials, users can become familiar with the interface, learn how to access and visualize various datasets, and understand how to utilize EE Explorer's features for their specific needs.
 
