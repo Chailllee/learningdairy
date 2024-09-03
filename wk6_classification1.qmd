@@ -52,20 +52,19 @@ Classification techniques, particularly deep learning, play a crucial role in me
 
 One of the significant challenges in the classification process is **overfitting**. Overfitting occurs when a model learns not only the underlying patterns in the training data but also the noise and outliers. As a result, the model performs exceptionally well on the training data but poorly on unseen data because it has become too complex and specific to the training examples.
 
-To mitigate overfitting in decision trees, a common approach is to prune the tree, which simplifies the model by removing less significant branches. The effectiveness of this pruning process can be quantified using the Tree score formula:
+To mitigate overfitting in decision trees, a common approach is to prune the tree, which simplifies the model by removing less significant branches(Friedman, J., 2009[^wk6_classification1-7];Quinlan, J. R. ,2014.[^wk6_classification1-8]). The effectiveness of this pruning process can be quantified using the Tree score formula:
 
 
 $$Tree score = SSR + TreePenalty_{alpha}* T_{Mumber Of Leaves}$$
 
-For the Tree score formula, why does removing more leaves result in a larger alpha?
 
 During the pruning process of decision trees, we use a parameter called ccp_alpha (cost complexity parameter) to control the extent of pruning. A higher value of this parameter indicates a greater tendency to remove more leaf nodes, thereby simplifying the tree structure.
 
-Let's understand why removing more leaf nodes leads to a larger ccp_alpha:
+Let's understand why removing more leaf nodes leads to a larger $ccp_{\alpha}$:
 
 **Gini Impurity and Tree Complexity**
 
-Gini impurity is a metric used to measure the purity of a dataset, with smaller values indicating higher purity.
+Gini impurity is a metric used to measure the purity of a dataset, with smaller values indicating higher purity(Breiman, L., 2017[^wk6_classification1-4]).
 
 During pruning, we aim to retain leaf nodes that positively contribute to the model's performance while reducing the complexity of the model.
 
@@ -75,7 +74,7 @@ When we remove a leaf node, the Gini impurity increases because we lose the puri
 
 ### Cost Complexity:
 
-ccp_alpha is a cost complexity parameter that balances the fit and complexity of the model during pruning.
+$ccp_{\alpha}$ is a cost complexity parameter(Quinlan, J. R. ,2014.[^wk6_classification1-8]; Breiman, L., 2017[^wk6_classification1-4]) that balances the fit and complexity of the model during pruning.
 
 By increasing ccp_alpha, the model tends to remove more leaf nodes, thereby reducing the complexity of the model.
 
@@ -83,7 +82,11 @@ The purpose of this is to prevent overfitting and improve the generalization abi
 
 ## Reflection
 
-In the field of remote sensing, these concepts pose several challenges and considerations that I find intriguing. Ensuring that the models I develop have strong generalization capabilities, capable of adapting to various environmental conditions, is paramount. Additionally, assessing and addressing data impurities arising from diverse factors in remote sensing datasets presents a fascinating puzzle to solve. Moreover, navigating the balance between constructing complex models to capture nuanced data variations while avoiding overfitting is a stimulating challenge that I look forward to tackling in this course.
+This week’s focus on classification techniques using Google Earth Engine (GEE) highlighted the critical challenge of overfitting in remote sensing models. Overfitting leads to models that perform well on training data but struggle with new data. The introduction of cost complexity pruning, particularly the role of ccp_alpha, emphasized the need to balance model complexity and generalization.
+
+Working with Random Forest classifiers in GEE provided practical insights into managing this balance. The process of selecting training data, evaluating models, and understanding the impact of pruning deepened my understanding of how to create robust models that can adapt to diverse environmental conditions.
+
+As I progress, I’m eager to apply these concepts to more complex datasets, refining strategies to improve model performance while avoiding overfitting. Balancing detailed data capture with model robustness remains a key focus in my ongoing work.
 
 ## Reference
 
@@ -99,3 +102,9 @@ In the field of remote sensing, these concepts pose several challenges and consi
 
 [^wk6_classification1-3]:Bakator, Mihalj, and Dragica Radosav. 2018. "Deep Learning and Medical Diagnosis: A Review of Literature" Multimodal Technologies and Interaction 2, no. 3: 47. https://doi.org/10.3390/mti2030047
 
+
+[^wk6_classification1-4]:Breiman, L. (2017). Classification and regression trees. Routledge.
+
+[^wk6_classification1-7]:Friedman, J. (2009). The elements of statistical learning: Data mining, inference, and prediction. (No Title).
+
+[^wk6_classification1-8]:Quinlan, J. R. (2014). C4. 5: programs for machine learning. Elsevier.
