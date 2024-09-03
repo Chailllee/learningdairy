@@ -167,8 +167,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">7.1</span> Abstract</a></li>
   <li><a href="#confusion-matrix-and-accuracy-metrics" id="toc-confusion-matrix-and-accuracy-metrics" class="nav-link" data-scroll-target="#confusion-matrix-and-accuracy-metrics"><span class="header-section-number">7.2</span> Confusion Matrix and Accuracy Metrics</a></li>
-  <li><a href="#accuracy-and-misclassification" id="toc-accuracy-and-misclassification" class="nav-link" data-scroll-target="#accuracy-and-misclassification"><span class="header-section-number">7.3</span> Accuracy and Misclassification</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.4</span> Reflection</a></li>
+  <li><a href="#multi-class-confusion-matrix" id="toc-multi-class-confusion-matrix" class="nav-link" data-scroll-target="#multi-class-confusion-matrix"><span class="header-section-number">7.3</span> Multi-Class Confusion Matrix</a></li>
+  <li><a href="#improved-confusion-matrix" id="toc-improved-confusion-matrix" class="nav-link" data-scroll-target="#improved-confusion-matrix"><span class="header-section-number">7.4</span> Improved confusion matrix</a></li>
+  <li><a href="#accuracy-and-misclassification" id="toc-accuracy-and-misclassification" class="nav-link" data-scroll-target="#accuracy-and-misclassification"><span class="header-section-number">7.5</span> Accuracy and Misclassification</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.6</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">7.7</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -218,26 +221,78 @@ Tip
 </section>
 <section id="confusion-matrix-and-accuracy-metrics" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="confusion-matrix-and-accuracy-metrics"><span class="header-section-number">7.2</span> Confusion Matrix and Accuracy Metrics</h2>
-<p>A confusion matrix is a table used to evaluate the performance of a classification algorithm. It provides a detailed breakdown of the model’s predictions compared to the actual labels. The matrix consists of four key components:</p>
+<p>A confusion matrix is a table used to evaluate the performance of a classification algorithm. It provides a detailed breakdown of the model’s predictions compared to the actual labels(Townsend, J. T., 1971<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>). The matrix consists of four key components:</p>
 <ul>
 <li><strong>True Positives (TP)</strong>: The number of correct predictions where the model accurately classified a positive instance.</li>
 <li><strong>True Negatives (TN)</strong>: The number of correct predictions where the model accurately classified a negative instance.</li>
 <li><strong>False Positives (FP)</strong>: The number of incorrect predictions where the model incorrectly classified a negative instance as positive.</li>
 <li><strong>False Negatives (FN)</strong>: The number of incorrect predictions where the model incorrectly classified a positive instance as negative.</li>
 </ul>
-<p>These values are used to compute various metrics:</p>
-<p><span class="math display">\[\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}\]</span></p>
-<p><span class="math display">\[\text{Precision} = \frac{TP}{TP + FP}\]</span></p>
-<p><span class="math display">\[\text{Recall} = \frac{TP}{TP + FN}\]</span></p>
-<p><span class="math display">\[\text{F1\ Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}\]</span></p>
 <p>These metrics provide insights into the model’s performance, indicating how well it can distinguish between different classes and how reliable its predictions are.</p>
 </section>
-<section id="accuracy-and-misclassification" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="accuracy-and-misclassification"><span class="header-section-number">7.3</span> Accuracy and Misclassification</h2>
+<section id="multi-class-confusion-matrix" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="multi-class-confusion-matrix"><span class="header-section-number">7.3</span> Multi-Class Confusion Matrix</h2>
+<p>There are also confusion matrix for a multi-class classification task(Sammut, C. et al., 2011<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:), with the classes <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>, and <span class="math inline">\(A_n\)</span>. In the confusion matrix, <span class="math inline">\(N_{ij}\)</span> represents the number of samples actually belonging to class <span class="math inline">\(A_i\)</span> but classified as class <span class="math inline">\(A_j\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mutipleconfusion.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Multi-class classification task</figcaption>
+</figure>
+</div>
+<p><strong>Accuracy for Multi-Class Classification</strong></p>
+<p>The overall accuracy of the classifier can be computed as:</p>
+<p><span class="math display">\[
+\text{Accuracy} = \frac{\sum_{i=1}^{n} N_{ii}}{\sum_{i=1}^{n} \sum_{j=1}^{n} N_{ij}}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(N_{ii}\)</span> is the number of correctly classified instances for class <span class="math inline">\(A_i\)</span>.</p></li>
+<li><p><span class="math inline">\(\sum_{i=1}^{n} \sum_{j=1}^{n} N_{ij}\)</span> is the total number of instances across all classes.</p></li>
+</ul>
+<p><strong>Precision for Class <span class="math inline">\(A_i\)</span></strong></p>
+<p><span class="math display">\[
+\text{Precision}(A_i) = \frac{N_{ii}}{\sum_{j=1}^{n} N_{ji}}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(N_{ii}\)</span> is the number of true positives for class <span class="math inline">\(A_i\)</span>.</p></li>
+<li><p><span class="math inline">\(\sum_{j=1}^{n} N_{ji}\)</span> is the total number of instances predicted as class <span class="math inline">\(A_i\)</span> (both correctly and incorrectly).</p></li>
+</ul>
+<p><strong>Recall for Class <span class="math inline">\(A_i\)</span></strong></p>
+<p><span class="math display">\[
+\text{Recall}(A_i) = \frac{N_{ii}}{\sum_{j=1}^{n} N_{ij}}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(N_{ii}\)</span> is the number of true positives for class <span class="math inline">\(A_i\)</span>.</p></li>
+<li><p><span class="math inline">\(\sum_{j=1}^{n} N_{ij}\)</span> is the total number of actual instances of class <span class="math inline">\(A_i\)</span>.</p></li>
+</ul>
+<p><strong>F1 Score for Class <span class="math inline">\(A_i\)</span></strong></p>
+<p><span class="math display">\[\text{F1Score}(A_i) = 2 \times \frac{\text{Precision}(A_i) \times \text{Recall}(A_i)}{\text{Precision}(A_i) + \text{Recall}(A_i)}\]</span></p>
+<p>These metrics help evaluate the performance of a multi-class classification model, providing insights into how well each class is being predicted and how balanced the classifier’s performance is across all classes.</p>
+</section>
+<section id="improved-confusion-matrix" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="improved-confusion-matrix"><span class="header-section-number">7.4</span> Improved confusion matrix</h2>
+<p>In 2016, Xinyang Deng et al.&nbsp;(2016)<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> proposed an improved method for constructing Basic Probability Assignment (BPA) using a confusion matrix. The method is designed to better utilize the information provided by the confusion matrix to enhance the effectiveness of BPA construction in classification problems.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/classifier.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Diagrammatic sketch for classification problem by using Dempster–Shafer theory.</figcaption>
+</figure>
+</div>
+<ul>
+<li><p><strong>Utilization of Confusion Matrix</strong>: The method leverages the recall and precision values derived from the confusion matrix to construct BPA. These values provide critical insights into the performance of each class in the classification process.</p></li>
+<li><p><strong>Dual Evidence Sources</strong>: Recall and precision are treated as two distinct evidence sources. The final BPA is constructed by synthesizing these two sources of evidence, allowing for a more robust representation of uncertainty in classification outcomes.</p></li>
+<li><p><strong>Multi-Classifier System</strong>: The method is applicable to multi-classifier systems, where multiple classifiers are combined. The Dempster-Shafer theory is employed to fuse the information from these classifiers, enabling more accurate and reliable decision-making.</p></li>
+</ul>
+<p>These enhancements aim to make better use of the information within the confusion matrix, improving the effectiveness of BPA construction in classification tasks.</p>
+</section>
+<section id="accuracy-and-misclassification" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="accuracy-and-misclassification"><span class="header-section-number">7.5</span> Accuracy and Misclassification</h2>
 <p>While accuracy is a useful measure, it is important to be mindful of potential imbalances in the data, where one class may be more prevalent than others. In such cases, relying solely on accuracy can be misleading, as the model might simply be predicting the dominant class more frequently, leading to a high accuracy score but poor performance on minority classes. Therefore, other metrics like precision and recall, which focus on the model’s ability to correctly identify positive instances, become crucial.</p>
 </section>
-<section id="reflection" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.4</span> Reflection</h2>
+<section id="reflection" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.6</span> Reflection</h2>
 <p>Continuing from the challenges discussed in Week 6, this week’s focus on accuracy and the confusion matrix highlights the importance of rigorous model evaluation in remote sensing. Ensuring that a classification model is not only accurate but also balanced and reliable across different classes is essential for effective geospatial analysis. This week has deepened my understanding of the critical role that accuracy assessment plays in model validation, and I am eager to apply these insights to improve the robustness of my classification models in future projects.</p>
 <p>This reminds me of my undergraduate dissertation project, where I evaluated the accuracy of fire detection models using confusion matrices.</p>
 <div class="quarto-figure quarto-figure-left">
@@ -247,8 +302,19 @@ Tip
 </figure>
 </div>
 <p><strong>Firstly</strong>, I prepared the data by creating binary classification labels using both active detection thresholding and visual inspection methods as ground truth data. <strong>Next</strong>, I trained the model using a U-net neural network model on remote sensing images, applying both cross-entropy and focal loss functions. <strong>Finally</strong>, I made predictions and evaluations by <u>predicting fire pixel locations</u> in new images and <u>assessing the differences between expected and original images</u> <u>using confusion matrix</u> evaluation metrics to determine prediction accuracy. Evaluating accuracy was a crucial practical experience for me in using convolutional networks to predict fire spots in remote sensing images.</p>
+</section>
+<section id="reference" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="reference"><span class="header-section-number">7.7</span> Reference</h2>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Townsend, J. T. (1971). Theoretical analysis of an alphabetic confusion matrix. Perception &amp; Psychophysics, 9, 40-50.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Sammut, C., &amp; Webb, G. I. (Eds.). (2011). Encyclopedia of machine learning. Springer Science &amp; Business Media.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Deng, X., Liu, Q., Deng, Y. and Mahadevan, S., 2016. An improved method to construct basic probability assignment based on the confusion matrix for classification problem. Information Sciences, 340–341, pp.250-261. Available at: https://doi.org/10.1016/j.ins.2016.01.033<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
