@@ -8,7 +8,7 @@ In this week, we explore the use of Google Earth Engine (GEE) for geospatial ana
 
 ::: callout-tip
 
-*GEE Data Catalog*: The page discusses how to search and load data from the Google Earth Engine (GEE) data catalog, specifically focusing on FAO GAUL global admin layers and Sentinel data.
+*GEE Data Catalog*: The class discusses how to search and load data from the Google Earth Engine (GEE) data catalog, specifically focusing on FAO GAUL global admin layers and Sentinel data.
 
 *Script and Code Examples*: It provides example code for loading and filtering data, applying cloud masks, and handling Sentinel data.
 
@@ -17,6 +17,37 @@ In this week, we explore the use of Google Earth Engine (GEE) for geospatial ana
 *Training Data*: Instructions are given on how to select and use training data within the study area, including generating samples and merging polygons into a feature collection.
 
 :::
+
+## Classification Process
+
+Classification is a supervised learning technique used to categorize data points into predefined classes or categories based on input features. The goal is to learn a mapping from input variables to a set of discrete outcomes (labels) using a training dataset where the correct labels are known. 
+
+### Principles of Classification(Sokal, R. R. , 1974[^wk6_classification1-1]; Zonneveld, I. S. , 1994[^wk6_classification1-2])
+
+1. **Training Phase**: During this phase, the classifier learns from labeled training data by identifying patterns and relationships between the input features and their corresponding labels. Popular algorithms for classification include decision trees, random forests, support vector machines, and neural networks.
+
+2. **Prediction Phase**: After training, the classifier is used to predict the class of new, unseen data points based on the patterns it has learned.
+
+3. **Evaluation**: The classifier's performance is evaluated using various metrics like accuracy, precision, recall, and the F1 score. Cross-validation is often employed to ensure the model generalizes well to new data.
+
+### Applications of Classification
+
+Classification is widely used across various domains, including:
+
+- **Medical Diagnosis**: To classify medical conditions based on symptoms or diagnostic test results. For example, using decision trees to predict the likelihood of a patient having a particular disease based on medical records.
+
+- **Spam Detection**: Email filtering systems classify emails as "spam" or "not spam" using algorithms like Naive Bayes(A. Almomani et al., 2013[^wk6_classification1-5]; Bahgat et al., 2016[^wk6_classification1-6]).
+
+![Taxonomy of email message structure](images/Taxonomy of email message structure.gif)
+
+![An example of message structure for the purpose of feature](images/Amessage structure.gif)
+
+- **Cing**: Financial institutions use classification models to assess the creditworthiness of applicants by predicting the probability of default .
+
+### Challenges: Overfitting
+
+One of the significant challenges in the classification process is **overfitting**. Overfitting occurs when a model learns not only the underlying patterns in the training data but also the noise and outliers. As a result, the model performs exceptionally well on the training data but poorly on unseen data because it has become too complex and specific to the training examples.
+
 
 
 ## Overfitting
@@ -50,3 +81,17 @@ The purpose of this is to prevent overfitting and improve the generalization abi
 ## Reflection
 
 In the field of remote sensing, these concepts pose several challenges and considerations that I find intriguing. Ensuring that the models I develop have strong generalization capabilities, capable of adapting to various environmental conditions, is paramount. Additionally, assessing and addressing data impurities arising from diverse factors in remote sensing datasets presents a fascinating puzzle to solve. Moreover, navigating the balance between constructing complex models to capture nuanced data variations while avoiding overfitting is a stimulating challenge that I look forward to tackling in this course.
+
+## Reference
+
+[^wk6_classification1-1]:Sokal, R. R. (1974). Classification: Purposes, Principles, Progress, Prospects: Clustering and other new techniques have changed classificatory principles and practice in many sciences. Science, 185(4157), 1115-1123.
+
+[^wk6_classification1-2]: Zonneveld, I. S. (1994). Basic principles of classification. In Ecosystem classification for environmental management (pp. 23-47). Dordrecht: Springer Netherlands.
+
+
+[^wk6_classification1-6]:Bahgat, E.M., Rady, S., Gad, W. (2016). An E-mail Filtering Approach Using Classification Techniques. In: Gaber, T., Hassanien, A., El-Bendary, N., Dey, N. (eds) The 1st International Conference on Advanced Intelligent System and Informatics (AISI2015), November 28-30, 2015, Beni Suef, Egypt. Advances in Intelligent Systems and Computing, vol 407. Springer, Cham. https://doi.org/10.1007/978-3-319-26690-9_29
+
+[^wk6_classification1-5]:A. Almomani, B. B. Gupta, S. Atawneh, A. Meulenberg and E. Almomani, "A Survey of Phishing Email Filtering Techniques," in IEEE Communications Surveys & Tutorials, vol. 15, no. 4, pp. 2070-2090, Fourth Quarter 2013, doi: 10.1109/SURV.2013.030713.00020.
+keywords: {Authentication;Machine learning;Electronic mail;Machine learning;Classification;Phishing;Phishing email;Filtering;Classifiers;Machine learning;Authentication;Network level protection},
+
+
