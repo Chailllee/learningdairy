@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -164,7 +166,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">7.1</span> Abstract</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.2</span> Reflection</a></li>
+  <li><a href="#confusion-matrix-and-accuracy-metrics" id="toc-confusion-matrix-and-accuracy-metrics" class="nav-link" data-scroll-target="#confusion-matrix-and-accuracy-metrics"><span class="header-section-number">7.2</span> Confusion Matrix and Accuracy Metrics</a></li>
+  <li><a href="#accuracy-and-misclassification" id="toc-accuracy-and-misclassification" class="nav-link" data-scroll-target="#accuracy-and-misclassification"><span class="header-section-number">7.3</span> Accuracy and Misclassification</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.4</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -191,15 +195,50 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">7.1</span> Abstract</h2>
 <p>Here is the overview of remote sensing techniques for classifying and assessing the accuracy of land cover data. Here are the key points:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><p><strong>Landcover Classification</strong>: It discusses the use of pre-classified data sources like GlobeLand30, ESA’s CCI, Dynamic World, MODIS, and Google building data for landcover classification.</p></li>
 <li><p><strong>Dynamic World</strong>: The page details the process of training, pre-processing, normalization, and classification using CNNs, with a focus on Dynamic World’s semi-supervised approach and regional division for sample stratification.</p></li>
 <li><p><strong>Sub Pixel Analysis</strong>: It explains the concept of sub pixel classification, spectral mixture analysis, and linear spectral unmixing, including mathematical formulas for calculating the proportion of landcover per pixel.</p></li>
 <li><p><strong>Accuracy Assessment</strong>: The page outlines various accuracy assessment methods in remote sensing, such as producer’s accuracy, user’s accuracy, overall accuracy, and the Kappa coefficient, along with their definitions and significance.</p></li>
 </ul>
+</div>
+</div>
+<p>Building upon the foundation laid in Week 6, where I explored the classification process and tackled challenges like overfitting in decision trees, this week delves deeper into the evaluation of classification models, specifically focusing on <strong>Accuracy Assessment</strong> and the <strong>Confusion Matrix</strong>.</p>
+<p>In the context of remote sensing and geospatial analysis, accuracy assessment is critical to understanding how well a classification model performs. A classification model assigns labels to pixels or objects in an image based on the training data provided. However, to gauge the model’s effectiveness, we need to compare the predicted labels with the actual ground truth labels, which is where the confusion matrix comes into play.</p>
 </section>
-<section id="reflection" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.2</span> Reflection</h2>
+<section id="confusion-matrix-and-accuracy-metrics" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="confusion-matrix-and-accuracy-metrics"><span class="header-section-number">7.2</span> Confusion Matrix and Accuracy Metrics</h2>
+<p>A confusion matrix is a table used to evaluate the performance of a classification algorithm. It provides a detailed breakdown of the model’s predictions compared to the actual labels. The matrix consists of four key components:</p>
+<ul>
+<li><strong>True Positives (TP)</strong>: The number of correct predictions where the model accurately classified a positive instance.</li>
+<li><strong>True Negatives (TN)</strong>: The number of correct predictions where the model accurately classified a negative instance.</li>
+<li><strong>False Positives (FP)</strong>: The number of incorrect predictions where the model incorrectly classified a negative instance as positive.</li>
+<li><strong>False Negatives (FN)</strong>: The number of incorrect predictions where the model incorrectly classified a positive instance as negative.</li>
+</ul>
+<p>These values are used to compute various metrics:</p>
+<p><span class="math display">\[\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}\]</span></p>
+<p><span class="math display">\[\text{Precision} = \frac{TP}{TP + FP}\]</span></p>
+<p><span class="math display">\[\text{Recall} = \frac{TP}{TP + FN}\]</span></p>
+<p><span class="math display">\[\text{F1\ Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}\]</span></p>
+<p>These metrics provide insights into the model’s performance, indicating how well it can distinguish between different classes and how reliable its predictions are.</p>
+</section>
+<section id="accuracy-and-misclassification" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="accuracy-and-misclassification"><span class="header-section-number">7.3</span> Accuracy and Misclassification</h2>
+<p>While accuracy is a useful measure, it is important to be mindful of potential imbalances in the data, where one class may be more prevalent than others. In such cases, relying solely on accuracy can be misleading, as the model might simply be predicting the dominant class more frequently, leading to a high accuracy score but poor performance on minority classes. Therefore, other metrics like precision and recall, which focus on the model’s ability to correctly identify positive instances, become crucial.</p>
+</section>
+<section id="reflection" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.4</span> Reflection</h2>
+<p>Continuing from the challenges discussed in Week 6, this week’s focus on accuracy and the confusion matrix highlights the importance of rigorous model evaluation in remote sensing. Ensuring that a classification model is not only accurate but also balanced and reliable across different classes is essential for effective geospatial analysis. This week has deepened my understanding of the critical role that accuracy assessment plays in model validation, and I am eager to apply these insights to improve the robustness of my classification models in future projects.</p>
 <p>This reminds me of my undergraduate dissertation project, where I evaluated the accuracy of fire detection models using confusion matrices.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
