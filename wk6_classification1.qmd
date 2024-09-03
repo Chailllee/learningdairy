@@ -34,23 +34,26 @@ Classification is a supervised learning technique used to categorize data points
 
 Classification is widely used across various domains, including:
 
-- **Medical Diagnosis**: To classify medical conditions based on symptoms or diagnostic test results. For example, using decision trees to predict the likelihood of a patient having a particular disease based on medical records.
+
+- **Medical Diagnosis**: 
+
+Classification techniques, particularly deep learning, play a crucial role in medical diagnostics. According to Mihalj Bakator and Mihalj Bakator (2018)[^wk6_classification1-3], deep learning methods like Convolutional Neural Networks (CNNs) are extensively used in tasks such as diagnosis, classification, and prediction within medical image analysis. Although deep learning has shown significant potential, it is not yet capable of fully replacing doctors, highlighting the need for a collaborative approach between technology and human expertise.
+
+![Flow diagram of the review process](images/flow diagram.png)
+
 
 - **Spam Detection**: Email filtering systems classify emails as "spam" or "not spam" using algorithms like Naive Bayes(A. Almomani et al., 2013[^wk6_classification1-5]; Bahgat et al., 2016[^wk6_classification1-6]).
 
-![Taxonomy of email message structure](images/Taxonomy of email message structure.gif)
 
 ![An example of message structure for the purpose of feature](images/Amessage structure.gif)
 
-- **Cing**: Financial institutions use classification models to assess the creditworthiness of applicants by predicting the probability of default .
 
-### Challenges: Overfitting
+## Challenges: Overfitting
 
 One of the significant challenges in the classification process is **overfitting**. Overfitting occurs when a model learns not only the underlying patterns in the training data but also the noise and outliers. As a result, the model performs exceptionally well on the training data but poorly on unseen data because it has become too complex and specific to the training examples.
 
+To mitigate overfitting in decision trees, a common approach is to prune the tree, which simplifies the model by removing less significant branches. The effectiveness of this pruning process can be quantified using the Tree score formula:
 
-
-## Overfitting
 
 $$Tree score = SSR + TreePenalty_{alpha}* T_{Mumber Of Leaves}$$
 
@@ -60,7 +63,7 @@ During the pruning process of decision trees, we use a parameter called ccp_alph
 
 Let's understand why removing more leaf nodes leads to a larger ccp_alpha:
 
-### Gini Impurity and Tree Complexity:
+**Gini Impurity and Tree Complexity**
 
 Gini impurity is a metric used to measure the purity of a dataset, with smaller values indicating higher purity.
 
@@ -92,6 +95,7 @@ In the field of remote sensing, these concepts pose several challenges and consi
 [^wk6_classification1-6]:Bahgat, E.M., Rady, S., Gad, W. (2016). An E-mail Filtering Approach Using Classification Techniques. In: Gaber, T., Hassanien, A., El-Bendary, N., Dey, N. (eds) The 1st International Conference on Advanced Intelligent System and Informatics (AISI2015), November 28-30, 2015, Beni Suef, Egypt. Advances in Intelligent Systems and Computing, vol 407. Springer, Cham. https://doi.org/10.1007/978-3-319-26690-9_29
 
 [^wk6_classification1-5]:A. Almomani, B. B. Gupta, S. Atawneh, A. Meulenberg and E. Almomani, "A Survey of Phishing Email Filtering Techniques," in IEEE Communications Surveys & Tutorials, vol. 15, no. 4, pp. 2070-2090, Fourth Quarter 2013, doi: 10.1109/SURV.2013.030713.00020.
-keywords: {Authentication;Machine learning;Electronic mail;Machine learning;Classification;Phishing;Phishing email;Filtering;Classifiers;Machine learning;Authentication;Network level protection},
 
+
+[^wk6_classification1-3]:Bakator, Mihalj, and Dragica Radosav. 2018. "Deep Learning and Medical Diagnosis: A Review of Literature" Multimodal Technologies and Interaction 2, no. 3: 47. https://doi.org/10.3390/mti2030047
 
