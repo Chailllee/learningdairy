@@ -162,9 +162,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">8.1</span> Abstract</a></li>
-  <li><a href="#difference-of-other-sar" id="toc-difference-of-other-sar" class="nav-link" data-scroll-target="#difference-of-other-sar"><span class="header-section-number">8.2</span> Difference of other SAR</a></li>
-  <li><a href="#sar-data-application" id="toc-sar-data-application" class="nav-link" data-scroll-target="#sar-data-application"><span class="header-section-number">8.3</span> SAR data application</a></li>
+  <li><a href="#sar-data-analysis" id="toc-sar-data-analysis" class="nav-link active" data-scroll-target="#sar-data-analysis"><span class="header-section-number">8.1</span> SAR Data Analysis</a>
+  <ul class="collapse">
+  <li><a href="#key-concepts-covered" id="toc-key-concepts-covered" class="nav-link" data-scroll-target="#key-concepts-covered"><span class="header-section-number">8.1.1</span> <strong>Key Concepts Covered</strong>:</a></li>
+  <li><a href="#difference-of-other-sarshahzad-et-al.-2024wk8_sar_data-4" id="toc-difference-of-other-sarshahzad-et-al.-2024wk8_sar_data-4" class="nav-link" data-scroll-target="#difference-of-other-sarshahzad-et-al.-2024wk8_sar_data-4"><span class="header-section-number">8.1.2</span> Difference of other SAR(Shahzad et al., 2024)</a></li>
+  </ul></li>
+  <li><a href="#sar-data-thermal-infrared-data-for-surface-temperature-analysis" id="toc-sar-data-thermal-infrared-data-for-surface-temperature-analysis" class="nav-link" data-scroll-target="#sar-data-thermal-infrared-data-for-surface-temperature-analysis"><span class="header-section-number">8.2</span> SAR Data &amp; Thermal Infrared Data for Surface Temperature Analysis</a>
+  <ul class="collapse">
+  <li><a href="#why-combine-sar-and-tir" id="toc-why-combine-sar-and-tir" class="nav-link" data-scroll-target="#why-combine-sar-and-tir"><span class="header-section-number">8.2.1</span> Why Combine SAR and TIR?</a></li>
+  <li><a href="#application-for-integrating-sar-and-tir-data" id="toc-application-for-integrating-sar-and-tir-data" class="nav-link" data-scroll-target="#application-for-integrating-sar-and-tir-data"><span class="header-section-number">8.2.2</span> Application for Integrating SAR and TIR Data</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.3</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">8.4</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -188,12 +197,34 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="abstract" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">8.1</span> Abstract</h2>
-<p>This class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts. This paper also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Summary
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This class introduces the basic principle of synthetic aperture radar (SAR), two sensor types, SAR data background, SAR data value, SAR polarization, SAR background, differential interferometric synthetic aperture radar (DlnSAR), SAR data processing, SAR data fusion, SAR image fusion and other concepts.</p>
+<p>This class also introduces how to use SAR data for change detection, including statistical test, threshold screening and ROC curve, image fusion and so on. Finally, a change detection algorithm based on SAR data is proposed, and an example is given.</p>
+</div>
+</div>
+<section id="sar-data-analysis" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sar-data-analysis"><span class="header-section-number">8.1</span> SAR Data Analysis</h2>
+<p><strong>Synthetic Aperture Radar (SAR)</strong> is a radar system that produces high-resolution images of the Earth’s surface by using the movement of the radar antenna to simulate a much larger aperture. SAR data can penetrate clouds and function during day and night, making it particularly useful in monitoring environmental and surface changes.</p>
+<section id="key-concepts-covered" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="key-concepts-covered"><span class="header-section-number">8.1.1</span> <strong>Key Concepts Covered</strong>:</h3>
+<ul>
+<li><p><strong>SAR Sensors</strong>: We explored different SAR sensors, including Sentinel-1, and their capabilities in capturing radar signals.</p></li>
+<li><p><strong>SAR Polarization</strong>: The ability of SAR to capture data in multiple polarizations, such as HH, HV, VV, and VH, provides deeper insights into surface characteristics.</p></li>
+<li><p><strong>Interferometry</strong>: Techniques like InSAR and DInSAR were introduced, demonstrating how they are used to measure surface deformation by analyzing phase differences between radar images.</p></li>
+<li><p><strong>Data Fusion</strong>: We learned about combining SAR data with optical imagery to improve accuracy in classification tasks, which is especially useful in urban mapping and land cover change detection (Wang, Jun et. al, 2024<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>).</p></li>
+</ul>
 </section>
-<section id="difference-of-other-sar" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="difference-of-other-sar"><span class="header-section-number">8.2</span> Difference of other SAR</h2>
+<section id="difference-of-other-sarshahzad-et-al.-2024wk8_sar_data-4" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="difference-of-other-sarshahzad-et-al.-2024wk8_sar_data-4"><span class="header-section-number">8.1.2</span> Difference of other SAR(Shahzad et al., 2024<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>)</h3>
 <table class="table">
 <colgroup>
 <col style="width: 27%">
@@ -246,15 +277,57 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="sar-data-application" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="sar-data-application"><span class="header-section-number">8.3</span> SAR data application</h2>
-<p>Analyze the change between two images (e.g.&nbsp;ratio or logarithmic ratio)</p>
-<p><a href="https://oballinger.github.io/PWTT/"><strong>Open Access Damage Detection Using Sentinel-1 Imagery</strong></a></p>
-<p><a href="https://bellingcat.github.io/RS4OSINT/C3_Blast.html"><strong>Blast Damage Assessment</strong></a></p>
-<p>See the difference over time in the following ways:</p>
-<p><a href="https://oballinger.github.io/PWTT/paper.html">Pixel-Wise T-Test</a></p>
+</section>
+<section id="sar-data-thermal-infrared-data-for-surface-temperature-analysis" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sar-data-thermal-infrared-data-for-surface-temperature-analysis"><span class="header-section-number">8.2</span> SAR Data &amp; Thermal Infrared Data for Surface Temperature Analysis</h2>
+<p>Surface temperature analysis is a key aspect of understanding environmental changes, particularly in urban areas and regions affected by climate change. By integrating <strong>Synthetic Aperture Radar (SAR)</strong> data with <strong>Thermal Infrared (TIR)</strong> data, we can achieve a more holistic understanding of surface temperature variations and their influencing factors.</p>
+<section id="why-combine-sar-and-tir" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="why-combine-sar-and-tir"><span class="header-section-number">8.2.1</span> Why Combine SAR and TIR?</h3>
+<p>Combining <strong>SAR</strong> and <strong>Thermal Infrared (TIR)</strong> data provides a comprehensive view of surface temperature variations and their driving factors. <strong>SAR</strong> captures surface properties like roughness, moisture, and vegetation structure, while <strong>TIR</strong> measures <strong>Land Surface Temperature (LST)</strong>. This fusion allows for deeper environmental analysis and more accurate monitoring.</p>
+<p>In <strong>urban heat island</strong> (UHI) studies, SAR data reveals urban structure and morphology, while TIR highlights temperature patterns. Together, they provide clearer insights into how urban features affect heat dynamics, supporting more effective urban planning.</p>
+<p>Additionally, integrating <strong>SAR’s surface moisture</strong> measurements with <strong>TIR’s temperature data</strong> helps assess the link between moisture content and surface temperature. This is crucial for monitoring drought and land degradation, offering a fuller picture of environmental conditions.</p>
+</section>
+<section id="application-for-integrating-sar-and-tir-data" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="application-for-integrating-sar-and-tir-data"><span class="header-section-number">8.2.2</span> Application for Integrating SAR and TIR Data</h3>
+<p>SAR data can provide a <strong>roughness index</strong> of the surface, which can be correlated with temperature patterns. For example, smoother surfaces like water bodies and urban concrete will reflect heat differently than rough surfaces like forests.</p>
+<ol type="1">
+<li><p><strong>Urban Heat Island Detection</strong>:</p>
+<ul>
+<li>By correlating LST from TIR data with <strong>building density</strong> and surface composition from SAR data, we can identify and monitor UHIs over time. This combination helps detect how specific materials and urban planning contribute to elevated temperatures in cities (Li et al., 2019<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>).</li>
+</ul>
+<p><img src="images/SHUI.jpg" class="img-fluid" alt="Spatial distribution of summer day-time (1:30 pm) SUHI for the conterminous U.S. in 2010."> Where SHUI is surface urban heat island. We can observed that larger urban areas display higher SUHI than smaller urban areas, indicating the increase of SUHI with the expansion of urban area size.</p></li>
+<li><p><strong>Climate Change Impact</strong>:</p>
+<ul>
+<li>The combined use of SAR and TIR data allows for long-term monitoring of land-use changes and their thermal effects. As landscapes shift from vegetation to urban development, LST tends to rise. Monitoring these changes with SAR’s ability to detect deforestation and TIR’s temperature monitoring capacity provides a complete picture of land transformation impacts (Balzter et al., 2007<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>).</li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/carbon.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Vegetation carbon content (t/ha) at Monks Wood NNR derived from the canopy height models from (a) LIDAR DSM and LIDAR DTM, (b) XVV InSAR DSM and LIDAR DTM, (c) XVV InSAR DSM and smoothed interpolated LHH InSAR DTM (dual wavelength approach). All images were averaged to 21 m pixel spacing as required by the Marrakech Accords to the Kyoto protocol. Color scale : 5…400 tC/ha.</figcaption>
+</figure>
+</div>
+<p>This figure illustrates how different terrain removal approaches, using both SAR and LIDAR, can provide comprehensive insights into vegetation carbon content. As shown by Balzter et al.&nbsp;(2007), combining X-VV interferometry DSM with LIDAR DSM and LIDAR DTM enhances the accuracy of carbon mapping. Such integration is crucial for monitoring carbon stocks and understanding the effects of land-use changes on carbon sequestration. By combining SAR and TIR data, long-term land-use monitoring becomes more precise, enabling better assessment of the environmental impact of urbanization and deforestation.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<p>This week’s exploration of SAR data and its integration with thermal infrared (TIR) data provided valuable insights into the broader applications of remote sensing for environmental monitoring. One key takeaway is the versatility of SAR in detecting surface characteristics such as roughness, moisture content, and urban structures, which, when combined with TIR data, offers a more comprehensive analysis of surface temperature variations. This multi-faceted approach is particularly useful in studying phenomena like urban heat islands and land-use changes.</p>
+<p>Understanding the combination of SAR and TIR data also highlighted the potential for improving climate change monitoring. The ability to track both land surface temperature and environmental changes in urban areas and natural landscapes makes this method crucial for addressing real-world problems such as deforestation, drought, and urbanization impacts. The class has deepened my appreciation of how fusing different types of geospatial data can lead to more precise and actionable environmental insights, reinforcing the importance of integrating multiple datasets for comprehensive analysis in future geospatial projects.</p>
+</section>
+<section id="reference" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">8.4</span> Reference</h2>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Wang, Jun, Yanlong Wang, Guang Li, and Zhengyuan Qi. 2024. “Integration of Remote Sensing and Machine Learning for Precision Agriculture: A Comprehensive Perspective on Applications” Agronomy 14, no. 9: 1975. https://doi.org/10.3390/agronomy14091975<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Shahzad, Naeem, and Xiaoli Ding. 2024. “An Improved Time Series SAR Interferometry (TSInSAR) for Investigating Earthquake-Induced Active Unstable Slopes (AUS) in Pakistan.” International Journal of Remote Sensing 45 (18): 6342–71. doi:10.1080/01431161.2024.2391106.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Li, X., Zhou, Y., Zhu, Z., and Asrar, G.R., 2019. The surface urban heat island response to urban expansion: A panel analysis for the conterminous United States. <em>Remote Sensing of Environment</em>, 235, p.111446.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Balzter, H., Rowland, C.S., and Saich, P., 2007. Forest canopy height and carbon estimation at Monks Wood National Nature Reserve, UK, using dual-wavelength SAR interferometry. <em>Remote Sensing of Environment</em>, 108(3), pp.224-239.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
